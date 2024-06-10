@@ -1,0 +1,20 @@
+:host {
+    --size: initial;
+    --stroke: initial;
+    --color: initial;
+    --hover-color: initial;
+}
+
+.my-icon {
+    height: var(--size);
+    width: var(--size);
+    stroke-width: var(--stroke);
+    stroke: var(--color);
+    color: var(--color);
+    transition: 400ms;
+
+    &:hover {
+        stroke: var(--hover-color);
+        color: var(--hover-color);
+    }
+}

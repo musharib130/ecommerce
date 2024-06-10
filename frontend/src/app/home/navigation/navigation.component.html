@@ -1,0 +1,26 @@
+<div class="navigation-root">
+    <div class="top-bar">
+        <img class="logo" src="../../../assets/logo/logo.jpg" alt="logo">
+        <div class="search-controls">
+            <input placeholder="Search" type="text">
+            <button>
+                <custom-icon name="search"></custom-icon>
+            </button>
+        </div>
+        <div class="client-controls">
+            <custom-icon name="git" [stroke]="1.5" [size]="80" [color]="{color: '#FFFFFF', hover: '#7bc62d'}"></custom-icon>
+            <div class="auth-group">
+                <button class="left">
+                    Login
+                </button>
+                <button class="right">
+                    Signup
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <app-time-picker [(time)]="time" ></app-time-picker>
+    </div>
+</div>
+
